@@ -1,0 +1,137 @@
+.gpt3__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+}
+
+.gpt3__navbar p {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #fff;
+    margin: 0 1rem;
+    cursor: pointer;
+    text-transform: capitalize;
+
+
+}
+
+.gpt3__navbar-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.gpt3__navbar-links-container {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.gpt3__navbar-links-logo {
+    margin-right: 3rem;
+}
+
+.gpt3__navbar-links-logo img {
+
+    width: 62.56px;
+    height: 16.02px;
+
+}
+
+.navbar-signin {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar-signin button {
+    padding: 1rem 2rem;
+    background: #FF4820;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+
+}
+
+.gpt3_navbar_mobile_menu_icon {
+    display: none;
+}
+
+.gpt3__navbar_mobile_menu_container {
+    position: relative;
+
+}
+.gpt3_navbar_menu_container{
+    display: none;
+}
+.gpt3__navbar-menu_links_sigIn{
+    display: none;
+}
+
+@media screen and (max-width: 1098px) {
+    .gpt3__navbar{
+        padding: 2rem 4rem;
+    }
+    .gpt3__navbar-links-container {
+        display: none;
+    }
+    .gpt3__navbar-signin {
+        display: none;
+    }
+
+
+    .gpt3_navbar_mobile_menu_icon {
+        display: block;
+    }
+    .gpt3_navbar_menu_container{
+        top: 114px;
+        right: 0;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        padding: 5rem;
+        background: var(--color-footer);
+    }
+    .gpt3_navbar_menu_container p{
+        margin:  1rem 0;
+    }
+    .gpt3__navbar-menu_links_sigIn{
+        display: flex;
+       
+
+    }
+    .gpt3__navbar-menu_links_sigIn button{ 
+        padding: 7px 22px;
+        margin-left: 15px;
+
+    }
+    
+
+    
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .gpt3__navbar{
+        padding: 1rem 2rem;
+    }
+    .gpt3_navbar_menu_container{
+        top: 82px;
+    }
+    
+    
+}
